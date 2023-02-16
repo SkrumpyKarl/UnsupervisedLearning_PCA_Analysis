@@ -1,5 +1,5 @@
-# Supervised Learning using Random Forest Classifier Ensemble Method for Processing MNIST Dataset
-This project involves using the Random Forest Classifier ensemble method to perform supervised learning on the MNIST dataset. The goal is to optimise the performance of the classifier by testing various parameters and evaluating the accuracy using the silhouette score.
+# UnsupervisedLearning_PCA_Analysis
+Exploration of the differences between US States by 1973 Crime and Urban Population Stats using unsupervised learning methods such as Principal Component Analysis (PCA) and various clustering techniques. The results of the analysis are presented using various visualizations, which allow for an in-depth understanding of the data.
 
 The code is written in Python 3.11 and run on a Jupyter Notebook in Visual Studio Code.
 
@@ -8,22 +8,26 @@ The following libraries are required to run the code:
 
 Numpy
 Pandas
+Missingno
 Scikit-learn
 Matplotlib
+Seaborn
 
 # Data Preprocessing
-Before the analysis is conducted, the data must be preprocessed to ensure it is in the correct format. This includes dividing the dataset into training, development, and test sets. The following techniques are used for data preprocessing:
+Before the analysis is conducted, the data must be preprocessed to ensure it is in the correct format. This includes dealing with any missing values and scaling the data. The following techniques are used for data preprocessing:
 
-Train-Test Split
+MinMaxScaler
+LabelEncoder
+StandardScaler
 
-# Random Forest Classifier
-The Random Forest Classifier is implemented using the RandomForestClassifier class from the scikit-learn library. The performance of the classifier is evaluated using the silhouette score.
+# PCA Analysis
+The PCA analysis is conducted using the PCA class from the scikit-learn library. This allows us to visualize the data and identify any patterns or redundancies in the data. Biplots are produced to visualize the patterns between objects in the data.
 
-# Model Tuning
-The performance of the classifier is optimized by testing various parameters such as the number of estimators, max depth, and min samples split. The best parameters are determined using the development dataset.
+# Clustering
+Clustering is performed using the KMeans and Agglomerative Clustering algorithms from the scikit-learn library. The evaluation metrics used to assess the performance of the clustering algorithms include:
 
-# Evaluation
-In order to assess the performance of the classifier, the silhouette score was used to evaluate its accuracy on the test dataset. Additionally, a confusion matrix was generated to identify which digits were most challenging to classify accurately.
+Confusion Matrix
+Silhouette Score
 
 # Visualization
-Visualization is performed using the Matplotlib library to assess the performance of the classifier and visualize the results.
+Visualization is performed using the Matplotlib and Seaborn libraries. This includes producing plots to visualize the data and assess the performance of the clustering algorithms.
